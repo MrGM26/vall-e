@@ -112,7 +112,7 @@ def example_usage():
 
     device = "cuda"
 
-    resps = torch.load("data/test/test.qnt.pt")[0].to(device)
+    resps = torch.load("data/Daniel/daniel.qnt.pt")[0].to(device)
     num_qnts = 1024
 
     model = NAR(num_qnts).to(device)
@@ -143,7 +143,7 @@ def example_usage():
 
     decode_to_file(
         codes,
-        Path("data/test/test.nar.init.wav"),
+        Path("data/Daniel/daniel.nar.init.wav"),
     )
 
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
@@ -178,7 +178,7 @@ def example_usage():
 
         decode_to_file(
             codes,
-            Path(f"data/test/test.nar.1-{i}.wav"),
+            Path(f"data/Daniel/daniel.nar.1-{i}.wav"),
         )
 
 
