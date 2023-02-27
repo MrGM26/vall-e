@@ -99,7 +99,7 @@ def example_usage():
 
     device = "cuda"
 
-    qnt = torch.load("data/data/Daniel/daniel.qnt.pt")[0, 0].to(device)
+    qnt = torch.load("data/Daniel/daniel.qnt.pt")[0, 0].to(device)
     num_qnts = 1024
 
     model = AR(num_qnts).to(device)
