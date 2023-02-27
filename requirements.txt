@@ -1,0 +1,6 @@
+torchaudio
+soundfile
+einops
+encodec
+diskcache
+omegaconf
