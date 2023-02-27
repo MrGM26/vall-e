@@ -60,14 +60,7 @@ def _interleaved_reorder(l, fn):
 def _validate(path, min_phones, max_phones):
     phones = _get_phones(path)
     unique_phones = list(set(phones))
-    if len(unique_phones) == 0:
-        return False
-    if len(unique_phones) == 1 and unique_phones[0] == "_":
-        return False
-    if len(phones) < min_phones:
-        return False
-    if len(phones) > max_phones:
-        return False
+    
     return True
 
 
